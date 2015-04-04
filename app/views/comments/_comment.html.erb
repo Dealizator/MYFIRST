@@ -1,0 +1,9 @@
+<p>
+  <strong><%= comment.commenter %>: </strong> <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Kill him', [comment.post, comment],
+             method: :delete,
+             data: {confirm: 'Уверен?'} %>
+</p>
